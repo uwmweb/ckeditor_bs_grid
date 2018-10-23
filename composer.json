@@ -1,6 +1,6 @@
 
 {
-    "name": "uwmweb/ckeditor_bs_grids",
+    "name": "uwmweb/ckeditor_bs_grid",
     "description": "Allows creating rows and columns within CKEditor using Bootstrap syntax.",
     "type": "drupal-module",
     "license": "GPL-2.0",
