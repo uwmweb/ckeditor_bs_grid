@@ -27,7 +27,7 @@ CKEDITOR.dialog.add('bs_grid', function (editor) {
 
       var rowsInput = this.getContentElement('info', 'rowCount'),
         colsInput = this.getContentElement('info', 'colCount'),
-        breakpoinInput = this.getContentElement('info', 'breakpoint');
+        breakpointInput = this.getContentElement('info', 'breakpoint');
 
       if (command === 'bs_grid') {
         var grid = selection.getSelectedElement();
@@ -36,7 +36,7 @@ CKEDITOR.dialog.add('bs_grid', function (editor) {
           this.setupContent(grid);
           if (rowsInput) { rowsInput.disable(); }
           if (colsInput) { colsInput.disable(); }
-          if (breakpoinInput) { breakpoinInput.disable(); }
+          if (breakpointInput) { breakpointInput.disable(); }
         }
       }
     },
@@ -71,14 +71,7 @@ CKEDITOR.dialog.add('bs_grid', function (editor) {
               ['3', 3],
               ['4', 4],
               ['5', 5],
-              ['6', 6],
-              ['6', 6],
-              ['7', 7],
-              ['8', 8],
-              ['9', 9],
-              ['10', 10],
-              ['11', 11],
-              ['12', 12]
+              ['6', 6]
             ],
             validate: validatorNum(lang.numColsError),
             setup: function (widget) {
